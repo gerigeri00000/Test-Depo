@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,22 +15,49 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
             padding: 10px;
             background-color: #c03a3a;
             border-bottom: 2px solid #000000;
         }
 
         .header img {
-            width: 400px;
+            max-width: 20%;
             height: auto;
         }
 
         .header-title {
             flex-grow: 1;
             text-align: center;
-            font-size: 50px;
+            font-size: 3rem;
             font-weight: bold;
             color: #ffffff;
+            margin: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 1.5rem;
+            }
+
+            .header img {
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 1.2rem;
+            }
+
+            .header img {
+                max-width: 100px;
+            }
+        }
+
+        .tableauPlaceholder {
+            width: 100%;
+            position: relative;
         }
     </style>
 </head>
@@ -39,30 +66,36 @@
     <div class="header">
         <img src="HEADER PUTIH_BPS.png" alt="Logo Left">
         <div class="header-title">PETA DATA PODES PER KECAMATAN 2024</div>
-        <img style="padding-right: 30px;" src="HEADER PUTIH_Akhlak.png" alt="Logo Right">
-        <img style="width: 80px; height: auto;" src="Logomark SE2026_Sekunder Color.png" alt="Logo Right">
-
+        <img style="padding-right: 10px;" src="HEADER PUTIH_Akhlak.png" alt="Logo Right">
+        <img style="max-width: 200px;" src="Logo SE2026 - utama_Horizontal Color.png" alt="Logo Right">
     </div>
-    <div class='tableauPlaceholder' id='viz1733969085746' style='position: relative'><noscript><a href='#'><img
-                    alt='Sheet 1 '
-                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book3_17339690660220&#47;Sheet1&#47;1_rss.png'
-                    style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='site_root' value='' />
-            <param name='name' value='Book3_17339690660220&#47;Sheet1' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book3_17339690660220&#47;Sheet1&#47;1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
-            <param name='filter' value='publish=yes' /></object></div>
-    <script type='text/javascript'>
+    <div class="tableauPlaceholder" id="viz1733969085746">
+        <noscript>
+            <a href="#">
+                <img alt="Sheet 1"
+                    src="https://public.tableau.com/static/images/Bo/Book3_17339690660220/Sheet1/1_rss.png"
+                    style="border: none" />
+            </a>
+        </noscript>
+        <object class="tableauViz" style="display:none;">
+            <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="Book3_17339690660220/Sheet1" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param name="static_image"
+                value="https://public.tableau.com/static/images/Bo/Book3_17339690660220/Sheet1/1.png" />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
+            <param name="filter" value="publish=yes" />
+        </object>
+    </div>
+    <script type="text/javascript">
         var divElement = document.getElementById('viz1733969085746');
         var vizElement = divElement.getElementsByTagName('object')[0];
         vizElement.style.width = '100%';
